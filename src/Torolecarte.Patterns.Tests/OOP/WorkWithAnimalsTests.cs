@@ -10,21 +10,33 @@ namespace Torolecarte.Patterns.Tests.OOP
     public class WorkWithAnimalsTests
     {
         [Test]
-        public void PlayWithCatAndDog()
+        public void AnimalsTests()
         {
             // Arrange.
-            Dog dog = new Dog();
-            Cat cat = new Cat();
+            Animal dog = new Dog();
+            Animal cat = new Cat();
+            Animal wolf = new Wolf("Leader");
+
+            List<Animal> animals = new List<Animal>() { dog, cat };
+            animals.Add(wolf);
 
             // Act.
-            dog.Name = "Fido";
-            Console.WriteLine($"Dog's name: {dog.Name}");
+            foreach (var item in animals)
+            {
+                Console.WriteLine($"The {item.GetType().Name} sounds like: {item.Sound}");
 
-            dog.DigHole();
-            //dog.Weight = -1;
+                if (item.GetType() == typeof(Dog)
+                    || item.GetType().IsSubclassOf(typeof(Dog)))
+                {
+                    Console.WriteLine("- Also it can:");
 
+                    //Dog d = (Dog)item;
+                    ((Dog)item).DigHole();
 
-
+                    if (item.GetType() == typeof(Wolf))
+                        ((Wolf)item).Howl();
+                }
+            }
 
             // Assert.
             Assert.That(true);
