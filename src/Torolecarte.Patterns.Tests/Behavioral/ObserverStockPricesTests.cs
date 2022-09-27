@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Torolecarte.Patterns.Behavioral.Observer.StockPrices;
+﻿using Torolecarte.Patterns.Behavioral.Observer.StockPrices;
 
 namespace Torolecarte.Patterns.Tests.Behavioral
 {
