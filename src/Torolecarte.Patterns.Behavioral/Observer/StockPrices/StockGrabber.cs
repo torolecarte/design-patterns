@@ -25,7 +25,9 @@ namespace Torolecarte.Patterns.Behavioral.Observer.StockPrices
                 _stockPrices.TryGetValue(StockNamesConstants.GOOGLE, out decimal googlePrice);
 
                 observer.Update(ibmPrice, applePrice, googlePrice);
+                Console.WriteLine();
             }
+            Console.WriteLine("--------------------------------- Finished");
         }
         public void Register(IObserver o)
         {

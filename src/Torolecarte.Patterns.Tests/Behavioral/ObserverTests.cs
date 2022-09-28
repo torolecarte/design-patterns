@@ -2,7 +2,7 @@
 
 namespace Torolecarte.Patterns.Tests.Behavioral
 {
-    public class ObserverStockPricesTests
+    public class ObserverTests
     {
         [Test]
         public void When_StockPricesUpdate_NotifyObservers()
