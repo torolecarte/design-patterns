@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
-using Torolecarte.Patterns.Creational.Factory.Enum;
+﻿using Torolecarte.Patterns.Creational.Factory.Enum;
 
 namespace Torolecarte.Patterns.Creational.Factory
 {

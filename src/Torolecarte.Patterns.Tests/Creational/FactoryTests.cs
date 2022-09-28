@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Torolecarte.Patterns.Creational.Factory;
+﻿using Torolecarte.Patterns.Creational.Factory;
 using Torolecarte.Patterns.Creational.Factory.Enum;
 
 namespace Torolecarte.Patterns.Tests.Creational
