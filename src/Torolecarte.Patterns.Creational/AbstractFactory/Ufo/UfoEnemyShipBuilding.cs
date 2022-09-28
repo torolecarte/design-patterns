@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Torolecarte.Patterns.Creational.AbstractFactory.Enum;
+﻿using Torolecarte.Patterns.Creational.AbstractFactory.Enum;
 
 namespace Torolecarte.Patterns.Creational.AbstractFactory.Ufo
 {
