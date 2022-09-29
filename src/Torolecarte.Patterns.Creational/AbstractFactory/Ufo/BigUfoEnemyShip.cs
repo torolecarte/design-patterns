@@ -3,12 +3,12 @@
     public class BigUfoEnemyShip : AbstractEnemyShip
     {
         // Fields.
-        private readonly IEnemyShipFactory factory;
+        private readonly IEnemyShipFactory _factory;
 
         // Constructors.
         public BigUfoEnemyShip(IEnemyShipFactory factory)
         {
-            this.factory = factory;
+            this._factory = factory;
         }
 
         // Methods.
@@ -16,8 +16,8 @@
         {
             Console.WriteLine($"Making enemy ship {Name}...");
 
-            Weapon = factory.AddGun();
-            Engine = factory.AddEngine();
+            Weapon = _factory.AddGun();
+            Engine = _factory.AddEngine();
         }
     }
 }
