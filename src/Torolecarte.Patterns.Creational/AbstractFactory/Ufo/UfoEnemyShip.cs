@@ -14,8 +14,8 @@
         // Methods.
         public override void MakeShip()
         {
+            Name = "UFO Annoying Ship";
             Console.WriteLine($"Making enemy ship {Name}...");
-
             Weapon = _factory.AddGun();
             Engine = _factory.AddEngine();
         }

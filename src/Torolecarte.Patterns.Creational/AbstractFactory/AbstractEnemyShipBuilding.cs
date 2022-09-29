@@ -11,6 +11,7 @@ namespace Torolecarte.Patterns.Creational.AbstractFactory
             AbstractEnemyShip enemyShip = Make(shipType);
 
             enemyShip?.MakeShip();
+            Console.WriteLine(enemyShip?.ToString());
             //enemyShip?.Display();
             //enemyShip?.FollowHero();
             //enemyShip?.Shoot();

@@ -28,7 +28,6 @@ namespace Torolecarte.Patterns.Creational.AbstractFactory.Ufo
         {
             IEnemyShipFactory factory = new UfoEnemyShipFactory();
             var enemyShip = new UfoEnemyShip(factory);
-            enemyShip.Name = "UFO Annoying Ship";
 
             return enemyShip;
         }
@@ -36,7 +35,6 @@ namespace Torolecarte.Patterns.Creational.AbstractFactory.Ufo
         {
             IEnemyShipFactory factory = new BigUfoEnemyShipFactory();
             var enemyShip = new BigUfoEnemyShip(factory);
-            enemyShip.Name = "Uber UFO Ship";
 
             return enemyShip;
         }

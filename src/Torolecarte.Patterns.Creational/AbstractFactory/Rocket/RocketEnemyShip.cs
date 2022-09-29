@@ -11,9 +11,8 @@
 
         public override void MakeShip()
         {
-            Console.WriteLine($"Making enemy ship {Name}");
-
             this.Name = "Stupendous Rocket";
+            Console.WriteLine($"Making enemy ship {Name}");
             this.Weapon = _factory.AddGun();
             this.Engine = _factory.AddEngine();
         }
