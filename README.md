@@ -3,6 +3,7 @@
 ## Creational
 - AbstractFactory
 - Factory
+- Singleton
 
 ## Behavioral
 - Observer
